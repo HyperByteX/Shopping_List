@@ -1,0 +1,118 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FFFFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+
+    <EditText
+        android:id="@+id/list_id_field"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_list_id_field"
+        android:inputType="text" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Load_List_Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1.0"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="@string/load_list_button"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/material_button_1"/>
+
+        <Button
+            android:id="@+id/Show_IDs_Button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1.0"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="@string/show_ids_button"
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/material_button_1"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="3dp"
+        android:background="#DDDDDD" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/list_item_field"
+            android:layout_weight="1.5"
+            android:layout_width="fill_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_height="50dp"
+            android:hint="@string/add_item_field"
+            android:inputType="text" />
+
+        <ImageButton android:id="@+id/Add_Item_Button"
+            android:contentDescription="@string/add_item_description"
+            android:layout_weight="0.5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_add_black_36dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="10dp"
+            android:background="#00FFFFFF" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.4"
+        android:orientation="vertical" >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:background="#FFFFFFFF"
+            android:id="@+id/list">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

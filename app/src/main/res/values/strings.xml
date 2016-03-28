@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Shopping List</string>
+    <string name="action_settings">Settings</string>
+    <string name="load_list_button">Load List</string>
+    <string name="show_ids_button">Show All IDs</string>
+    <string name="enter_list_id_field">Enter List ID</string>
+    <string name="add_item_field">Add item to list</string>
+    <string name="id_list_title">List IDs</string>
+    <string name="add_item_description">Add an item</string>
+</resources>
